@@ -37,7 +37,24 @@ footer {
 }
 
 .fullscreen {
-  height: calc(100vh - 2.5rem);
+  height: 100vh;
   background-color: var(--color-hl);
   color: var(--color-text-hl);
+}
+
+.phone {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .phone {
+    display: initial;
+  }
+  .nophone {
+    display: none;
+  }
+
+  .fullscreen h1 {
+    font-size: 250%;
+  }
 }

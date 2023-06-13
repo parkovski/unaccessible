@@ -6,7 +6,7 @@
 <style>
   main {
     max-width: 960px;
-    margin: 1rem auto 0;
+    margin: 4.25rem auto 0;
     padding: 1px 1rem;
     border-radius: 5px;
     background: var(--color-content-bg);

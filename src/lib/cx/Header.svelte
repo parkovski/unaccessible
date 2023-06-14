@@ -32,7 +32,7 @@
 
   #menu-button {
     position: absolute;
-    top: 32px;
+    top: 1.5rem;
     left: 12px;
     width: 20px;
     height: 20px;
@@ -67,7 +67,7 @@
     right: 0;
     background: var(--color-text);
     color: var(--color-text-hl);
-    padding: 1rem 40px;
+    padding: .25rem 40px;
     font-size: 125%;
     z-index: 100;
   }
@@ -80,7 +80,7 @@
     width: 150px;
     height: 100%;
     margin: 0;
-    padding: 56px 0;
+    padding: 3rem 0;
     list-style: none;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
@@ -105,7 +105,7 @@
 
   @media (min-width: 640px) {
     header {
-      padding: 1rem 8px;
+      padding: .25rem 8px;
     }
     #menu-button {
       display: none;

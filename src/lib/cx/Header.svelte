@@ -85,7 +85,7 @@
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
     line-height: 1;
-    background: var(--color-hl);
+    background: var(--color-menu-bg);
   }
 
   #menu > li > a {
@@ -121,17 +121,14 @@
       box-shadow: none;
       background: none;
     }
+    li:not(:first-child) {
+      padding-top: .333em;
+    }
   }
 
   img.logo {
     height: 2em;
     vertical-align: middle;
-  }
-
-  @media (min-width: 640px) {
-    li:not(:first-child) {
-      padding-top: .333em;
-    }
   }
 </style>
 
@@ -154,7 +151,7 @@
     </a></li>
     <li><a href="/clips">clips</a></li>
     <li><a href="/updates">updates</a></li>
-    <li><a href="/bio">bio</a></li>
+    <li><a href="/team">team</a></li>
     <li><a href="/about">about</a></li>
   </ul>
 </header>

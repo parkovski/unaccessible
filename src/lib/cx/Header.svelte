@@ -32,8 +32,8 @@
 
   #menu-button {
     position: absolute;
-    top: 28px;
-    left: 8px;
+    top: 32px;
+    left: 12px;
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -65,10 +65,11 @@
     top: 0;
     left: 0;
     right: 0;
-    background: var(--color-hl);
+    background: var(--color-text);
     color: var(--color-text-hl);
     padding: 1rem 40px;
     font-size: 125%;
+    z-index: 100;
   }
 
   #menu {
@@ -76,27 +77,29 @@
     position: fixed;
     top: 0;
     left: -100%;
-    width: 250px;
+    width: 150px;
     height: 100%;
     margin: 0;
-    padding: 40px 0;
+    padding: 56px 0;
     list-style: none;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
     line-height: 1;
     background: var(--color-hl);
-    color: var(--color-text-hl);
   }
 
   #menu > li > a {
     display: block;
     padding: 4px 8px;
-    color: inherit;
-    text-decoration: none;
     transition-duration: .25s;
   }
 
-  #menu > li > a:hover {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
     text-decoration: underline;
   }
 
@@ -116,6 +119,18 @@
       transition-duration: 0s;
       padding: 0;
       box-shadow: none;
+      background: none;
+    }
+  }
+
+  img.logo {
+    height: 2em;
+    vertical-align: middle;
+  }
+
+  @media (min-width: 640px) {
+    li:not(:first-child) {
+      padding-top: .333em;
     }
   }
 </style>
@@ -125,9 +140,18 @@
   <label id="menu-button" for="menu-check">
     <span></span>
   </label>
-  <span class="phone">unaccessible</span>
+  <a href="/" class="phone">
+    <img src="/Unaccessible-white-128.png" class="logo" alt="Logo">
+    Unaccessible
+  </a>
   <ul id="menu" role="navigation" on:click={closeMenu} on:keydown={menuKeyDown}>
-    <li><a href="/">[logo]unaccessible</a></li>
+    <li><a href="/">
+        <span class="phone">home</span>
+        <span class="nophone">
+          <img src="/Unaccessible-white-128.png" class="logo" alt="Logo">
+          unaccessible
+        </span>
+    </a></li>
     <li><a href="/clips">clips</a></li>
     <li><a href="/updates">updates</a></li>
     <li><a href="/bio">bio</a></li>

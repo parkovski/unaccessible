@@ -5,7 +5,9 @@
     Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-  --color-hl: #b22222;
+  /*--color-hl: #b22222;*/
+  --color-hl: #d30033;
+  --color-hl-bright: #fa0023;
   --color-hl-2: #840a0a;
   --color-bg: #e3e3e3;
   --color-content-bg: #fff;
@@ -29,16 +31,8 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.fullscreen h1 {
-  margin: 0 auto 1rem;
-  font-size: 400%;
-}
-
-.fullscreen {
   height: 100vh;
-  background-color: var(--color-hl);
+  background-color: var(--color-text);
   color: var(--color-text-hl);
 }
 
@@ -52,9 +46,5 @@ footer {
   }
   .nophone {
     display: none;
-  }
-
-  .fullscreen h1 {
-    font-size: 250%;
   }
 }

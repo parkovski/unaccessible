@@ -65,6 +65,7 @@
     top: 0;
     left: 0;
     right: 0;
+    height: 3.5rem;
     background: var(--color-text);
     color: var(--color-text-hl);
     padding: .25rem 40px;
@@ -88,10 +89,14 @@
     background: var(--color-menu-bg);
   }
 
-  #menu > li > a {
-    display: block;
+  #menu > li {
     padding: 4px 8px;
     transition-duration: .25s;
+  }
+
+  .phone-home {
+    display: block;
+    margin-top: 4px;
   }
 
   a {
@@ -103,9 +108,18 @@
     text-decoration: underline;
   }
 
+  img.badge {
+    display: inline;
+    width: 2rem;
+    margin-right: .125rem;
+  }
+
   @media (min-width: 640px) {
     header {
       padding: .25rem 8px;
+    }
+    .phone-home {
+      display: none;
     }
     #menu-button {
       display: none;
@@ -121,8 +135,16 @@
       box-shadow: none;
       background: none;
     }
-    li:not(:first-child) {
-      padding-top: .333em;
+    #menu > li:not(:first-child):not(:last-child) {
+      padding-top: .6667rem;
+    }
+    #menu > li:last-child {
+      position: absolute;
+      right: 0;
+      padding-top: .5rem;
+    }
+    img.badge {
+      margin-right: 0.5rem;
     }
   }
 
@@ -137,7 +159,7 @@
   <label id="menu-button" for="menu-check">
     <span></span>
   </label>
-  <a href="/" class="phone">
+  <a href="/" class="phone-home">
     <img src="/Unaccessible-white-128.png" class="logo" alt="Logo">
     Unaccessible
   </a>
@@ -153,5 +175,17 @@
     <li><a href="/updates">updates</a></li>
     <li><a href="/team">team</a></li>
     <li><a href="/about">about</a></li>
+    <li>
+      <a href="https://www.patreon.com" target="_blank" rel="noreferrer">
+        <img src="/Digital-Patreon-Logo_FieryCoral.png" alt="Patreon"
+          class="badge">
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+        <img src="/Instagram_Glyph_Gradient.png" alt="Instagram" class="badge">
+      </a>
+      <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+        <img src="/f_logo_RGB-Blue_1024.png" alt="Facebook" class="badge">
+      </a>
+    </li>
   </ul>
 </header>

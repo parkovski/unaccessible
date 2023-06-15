@@ -21,6 +21,17 @@
     color: #111;
   }
 
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline;
+    margin: 0 4px;
+  }
+  li img {
+    width: 2rem;
+  }
+
   @media (max-width: 800px) {
     h1 {
       font-size: 250%;
@@ -32,5 +43,22 @@
   <div class="title">
     <h1><span>UN</span>ACCESSIBLE</h1>
     <h2>A documentary by Hayden&nbsp;Snell</h2>
+    <ul>
+      <li>
+        <a href="https://www.patreon.com">
+          <img src="/Digital-Patreon-Logo_FieryCoral.png" alt="Patreon">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com">
+          <img src="/Instagram_Glyph_Gradient.png" alt="Instagram">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com">
+          <img src="/f_logo_RGB-Blue_1024.png" alt="Facebook">
+        </a>
+      </li>
+    </ul>
   </div>
 </div>

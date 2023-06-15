@@ -78,7 +78,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    width: 150px;
+    width: 200px;
     height: 100%;
     margin: 0;
     padding: 3rem 0;
@@ -151,6 +151,7 @@
   img.logo {
     height: 2em;
     vertical-align: middle;
+    transform: rotate(-11.1deg);
   }
 </style>
 
@@ -165,26 +166,35 @@
   </a>
   <ul id="menu" role="navigation" on:click={closeMenu} on:keydown={menuKeyDown}>
     <li><a href="/">
-        <span class="phone">home</span>
+        <span class="phone">Home</span>
         <span class="nophone">
-          <img src="/Unaccessible-white-128.png" class="logo" alt="Logo">
-          unaccessible
+          <img src="/Unaccessible-white-128.png" class="logo" alt="Logo"
+            title="Home">
+          Unaccessible
         </span>
     </a></li>
-    <li><a href="/clips">clips</a></li>
-    <li><a href="/updates">updates</a></li>
-    <li><a href="/team">team</a></li>
-    <li><a href="/about">about</a></li>
+    <li><a href="/clips">Clips</a></li>
+    <li><a href="/updates">Updates</a></li>
+    <li><a href="/team">Team</a></li>
+    <li><a href="/about">About</a></li>
     <li>
-      <a href="https://www.patreon.com" target="_blank" rel="noreferrer">
+      <a href="https://www.patreon.com/unaccessible" target="_blank"
+        rel="noreferrer">
         <img src="/Digital-Patreon-Logo_FieryCoral.png" alt="Patreon"
-          class="badge">
+          class="badge" title="Patreon">
       </a>
-      <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-        <img src="/Instagram_Glyph_Gradient.png" alt="Instagram" class="badge">
+      <a href="https://www.gofundme.com/unaccessible" target="_blank"
+        rel="noreferrer">
+        <img src="/GoFundMe-Logo.png" alt="GoFundMe" class="badge" title="GoFundMe">
+      </a>
+      <a href="https://www.instagram.com/unaccessiblefilm" target="_blank"
+        rel="noreferrer">
+        <img src="/Instagram_Glyph_Gradient.png" alt="Instagram" class="badge"
+          title="Instagram">
       </a>
       <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
-        <img src="/f_logo_RGB-Blue_1024.png" alt="Facebook" class="badge">
+        <img src="/f_logo_RGB-Blue_1024.png" alt="Facebook" class="badge"
+          title="Facebook">
       </a>
     </li>
   </ul>

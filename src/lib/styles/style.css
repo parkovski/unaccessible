@@ -47,7 +47,7 @@ footer {
 
 @media (max-width: 640px) {
   .phone {
-    display: initial;
+    display: block;
   }
   .nophone {
     display: none;

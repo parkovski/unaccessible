@@ -6,7 +6,7 @@
 <style>
   footer {
     margin-top: -2rem;
-    color: var(--color-text-hl);
+    color: var(--color-header-text);
   }
 </style>
 

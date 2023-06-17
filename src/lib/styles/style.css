@@ -5,19 +5,39 @@
     Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-  /*--color-hl: #b22222;*/
-  --color-hl: #d30033;
-  --color-hl-bright: #fa0023;
-  --color-hl-2: #840a0a;
+  --color-logo: #fa0023;
+  --color-header-bg: #111;
+  --color-header-text: #fff;
+  --color-menu-bg: #1a1a1a;
+
   --color-bg: #e3e3e3;
   --color-content-bg: #fff;
   --color-text: #111;
-  --color-text-hl: #fff;
-  --color-menu-bg: #1a1a1a;
+  --color-hl: #d30033;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #111;
+    --color-content-bg: #222;
+    --color-text: #fff;
+    --color-hl: #fa4040;
+  }
 }
 
 body {
   background: var(--color-bg);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-hl);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-hl);
+  text-decoration: underline;
 }
 
 ul {
@@ -37,8 +57,8 @@ footer {
   align-items: center;
   text-align: center;
   height: 100vh;
-  background-color: var(--color-text);
-  color: var(--color-text-hl);
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
 }
 
 .phone {

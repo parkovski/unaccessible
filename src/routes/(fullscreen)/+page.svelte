@@ -12,7 +12,7 @@
     font-family: 'Chalkduster';
     font-size: 450%;
     font-weight: normal;
-    color: var(--color-hl-bright);
+    color: var(--color-logo);
     transform: rotate(-11.1deg);
     margin: 4rem 0;
     text-shadow:
@@ -76,7 +76,7 @@
 
 <div class="fullscreen">
   <div class="title">
-    <img src="/Logo-wide.png" class="logo-wide">
+    <img src="/Logo-wide.png" alt="Logo" class="logo-wide">
     <h1><span>UN</span>ACCESSIBLE</h1>
     <h2>A documentary by Hayden&nbsp;Snell</h2>
     <ul class="phone">

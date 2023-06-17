@@ -66,8 +66,8 @@
     left: 0;
     right: 0;
     height: 3.5rem;
-    background: var(--color-text);
-    color: var(--color-text-hl);
+    background: var(--color-header-bg);
+    color: var(--color-header-text);
     padding: .25rem 40px;
     font-size: 125%;
     z-index: 100;

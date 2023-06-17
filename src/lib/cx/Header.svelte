@@ -47,7 +47,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: var(--color-text-hl);
+    background-color: var(--color-header-text);
     transition-duration: .25s;
   }
   #menu-button > span::before {
@@ -152,6 +152,7 @@
     height: 2em;
     vertical-align: middle;
     transform: rotate(-11.1deg);
+    margin-right: .5ex;
   }
 </style>
 
@@ -161,16 +162,14 @@
     <span></span>
   </label>
   <a href="/" class="phone-home">
-    <img src="/Unaccessible-white-128.png" class="logo" alt="Logo">
-    Unaccessible
+    <img src="/Unaccessible-white-128.png" class="logo" alt="Logo">Unaccessible
   </a>
   <ul id="menu" role="navigation" on:click={closeMenu} on:keydown={menuKeyDown}>
     <li><a href="/">
         <span class="phone">Home</span>
         <span class="nophone">
           <img src="/Unaccessible-white-128.png" class="logo" alt="Logo"
-            title="Home">
-          Unaccessible
+            title="Home">Unaccessible
         </span>
     </a></li>
     <li><a href="/clips">Clips</a></li>
